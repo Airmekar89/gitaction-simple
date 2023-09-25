@@ -1,6 +1,5 @@
 provider "aws" {
-  profile = "iac_user"
-  region  = "us-east-1"
+  region = "us-east-1"
 }
 resource "aws_vpc" "myvpc" {
   cidr_block           = "172.30.0.0/16"
