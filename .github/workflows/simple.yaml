@@ -14,14 +14,9 @@ jobs:
         run: |
           node -v
           npm -v
-     # - name: python command
-      #  run: |
-       #   import platform
-       #   print(platform.processor())
-        #  shell: python
   run-windows-commands:
     runs-on: windows-latest
-    needs: ["run-shell-command"]
+    needs: ["run-shell-commands"]
     steps:
       - name: Directory
         run: Get-Location
